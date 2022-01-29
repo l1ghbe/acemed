@@ -11,10 +11,14 @@ html {
     padding: 0;
 	box-sizing: inherit;
 }
+html {
+	scroll-behavior: smooth;
+  }
 
 a {
 	text-decoration: none;
 	color: inherit;
+	
 }
 
 body {
@@ -22,6 +26,7 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
 	overflow-anchor: none;
+	background: $primary;
 }
 
 ul {
@@ -43,7 +48,7 @@ ul {
 
 .link {
 	position: relative;
-
+	cursor: pointer;
 	&::before {
 		content: '';
 		position: absolute;
@@ -64,5 +69,8 @@ ul {
 	}
 }
 
+.fa {
+	// fill: blue !important;
+}
 
 @import "_media.scss";

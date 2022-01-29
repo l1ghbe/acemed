@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -16,14 +17,14 @@
                     <div class="header__logo">
                         <a href="#">
                             <!-- <img src="" alt=""> -->
-                            Logo
+                            ЭйсМед
                         </a>
                     </div>
                     <nav class="header-menu">
                         <ul class="header-menu-list">
-                            <li class="header-menu__item"><a href="#" class="header-menu__link link">Главная</a></li>
-                            <li class="header-menu__item"><a href="#" class="header-menu__link link">О нас</a></li>
-                            <li class="header-menu__item"><a href="#" class="header-menu__link link">Контакты</a></li>
+                            <li class="header-menu__item"><btn class="header-menu__link link">Главная</btn></li>
+                            <li class="header-menu__item"><btn id="about-btn" class="header-menu__link link">О нас</btn></li>
+                            <li class="header-menu__item"><btn id="contacts-btn" class="header-menu__link link">Контакты</btn></li>
                         </ul>
                     </nav>
                     <div class="menu-burger">
@@ -42,7 +43,7 @@
                     </p>
                     <!-- <button>Контакт ас</button> -->
                     <div class="buttons">
-                        <button class="blob-btn">
+                        <button class="blob-btn" id="main-btn">
                           Свяжитесь с нами
                           <span class="blob-btn__inner">
                             <span class="blob-btn__blobs">
@@ -79,11 +80,58 @@
             </div>
         </main>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non corporis similique assumenda ratione dicta eum fuga nam, optio aliquid. Doloribus harum voluptates commodi. Ducimus aperiam, architecto nobis consequatur asperiores dolore voluptates temporibus veniam vero culpa. Officiis recusandae sapiente alias illum. Ipsam a dolore at ipsum sit, consequatur, laborum fugiat consectetur aut, dignissimos accusamus excepturi! Adipisci optio labore ipsam esse cum magni ut obcaecati perspiciatis quam, cumque enim iure maxime autem iusto recusandae quos quis, aliquid officia consectetur fuga distinctio? Numquam porro labore quibusdam, aspernatur consequuntur incidunt dignissimos libero fugit voluptatem deserunt excepturi ex blanditiis repudiandae eum reprehenderit quaerat sapiente ea, debitis molestiae sint velit, consectetur adipisci. Omnis autem doloribus voluptatum optio et id hic cum? Nisi, saepe quaerat sapiente odio reprehenderit amet aperiam laudantium deleniti officia est voluptas quibusdam, deserunt illum velit sunt illo atque, repudiandae molestiae odit sint iusto? Velit asperiores voluptate recusandae modi accusamus est natus veniam tempora quam facilis eveniet, voluptatibus a molestias ipsum. Earum, aut dolor. Voluptate fugiat deserunt aspernatur necessitatibus. Blanditiis explicabo repellendus commodi ut nulla nobis laudantium facere, a maxime inventore earum sunt corrupti, dolor quia? Exercitationem eaque accusamus, perferendis fugit consectetur esse perspiciatis. Harum id repellendus mollitia labore, magni inventore recusandae ex ad. Architecto quibusdam voluptatum omnis aperiam, obcaecati minima ducimus, nulla incidunt, dolorum quia modi! Earum nulla explicabo inventore sint, vel aliquam fugit quae rerum architecto in maxime nemo nobis minima. Quod fugiat fuga possimus voluptatibus illo officia quae cupiditate ipsa eius voluptas facilis sequi nostrum, sed sunt, temporibus, laudantium beatae ratione dolorum et perspiciatis obcaecati! Quis tenetur dolores veniam iusto aspernatur? Consectetur quos modi accusamus magnam vel? Ad asperiores nihil ipsa officiis in laborum voluptate quaerat odio cupiditate, veniam laudantium omnis nemo est. Quod, assumenda nisi eius, id aliquid molestias iusto sapiente suscipit at amet eum hic officiis est iure corporis.</p>
+                <h2 class="about-title">О нас</h2>
+                <div class="about-description__wrapper">
+                  <p class="about-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non corporis similique assumenda ratione dicta eum fuga nam, optio aliquid. Doloribus harum voluptates commodi. Ducimus aperiam, architecto nobis consequatur asperiores dolore voluptates temporibus veniam vero culpa. Officiis recusandae sapiente alias illum. Ipsam a dolore at ipsum sit, consequatur.</p>
+                  <svg class="icon dots-svg-1">
+                    <use xlink:href="./img/dots.svg#dots"></use>
+                  </svg>
+                  <svg class="icon dots-svg-2">
+                    <use xlink:href="./img/dots.svg#dots"></use>
+                  </svg>
+                </div>
             </div>
         </section>
+
+        <footer id="contacts">
+          <div class="top_header">
+            <section>
+              <span><i class="fa fa-map-marker"></i></span>
+              <span>Street, full address, state/province, country, pincode</span>
+            </section>
+            <section>
+              <span><i class="fa fa-phone"></i></span>
+              <a href="tel:88005553535" class="link">(00) 0000 0000</a>
+            </section>
+            <section>
+              <span><i class="fa fa-envelope"></i></span>
+              <a href="mailto:info@website.com" class="link">info@websitename.com</a>
+            </section>
+          </div>
+          <span class="border-shape"></span>
+          <div class="bottom_content">
+            <section>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+            </section>
+            <section>
+              <!-- <a href="#">Home</a>
+              <a href="#">About us</a>
+              <a href="#">Order</a>
+              <a href="#">Retail</a>
+              <a href="#">Member</a>
+              <a href="#">Contact Us</a> -->
+              <a href="#">ООО "ЭйсМед"</a>
+            </section>
+          </div>
+          <div class="copyright">
+            Copyright © 2021 - Все права защищены
+          </div>
+        </footer>
 
     </div>
 

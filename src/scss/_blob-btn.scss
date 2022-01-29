@@ -1,6 +1,4 @@
-$cyan: #0505A9;
-$dark: #FFFFFF;
-$borderW: 2px;
+@import '_vars';
 
 .blob-btn {
     $numOfBlobs: 4;
@@ -105,6 +103,11 @@ $borderW: 2px;
           transform: translateZ(0) scale(1.4);
         }
       }
+    }
+
+    &:active {
+      transition: 0.3s;
+      transform: scale(0.95);
     }
     
   }
