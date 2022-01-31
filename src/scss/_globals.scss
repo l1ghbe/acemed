@@ -46,6 +46,38 @@ ul {
     width: 90%;
 }
 
+.logo {
+	width: 90px;
+	height: 90px;
+	transition: all 0.3s ;
+}
+
+.logo-link {
+	position: relative;
+}
+
+.logo-text {
+	position: absolute;
+	top: -50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	// display: none;
+	transition: 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.logo-link:hover {
+	.logo {
+		transform: scale(1.15);
+	}
+	.logo-text {
+		opacity: 1;
+		visibility: visible;
+		left: 150%;
+	}
+}
+
 .link {
 	position: relative;
 	cursor: pointer;
