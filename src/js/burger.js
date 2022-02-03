@@ -6,8 +6,10 @@ const burger = () => {
     const contactsBtn = document.getElementById('contacts-btn')
     const aboutBtn = document.getElementById('about-btn')
     const mainBtn = document.getElementById('main-btn')
+    const eqBtn = document.getElementById('equipment-btn')
     // const contacts = document.getElementById('contacts')
     const about = document.getElementById('about')
+    const equipment = document.getElementById('equipment')
 
 
 
@@ -39,14 +41,19 @@ const burger = () => {
         } )
     })
 
-    contactsBtn.addEventListener('click', () => {
-        window.scrollBy(0, window.innerHeight)
+
+    eqBtn.addEventListener('click', () => {
+        equipment.scrollIntoView(true)
     })
     mainBtn.addEventListener('click', () => {
-        window.scrollBy(0, window.innerHeight)
+        window.scrollBy(0, document.body.offsetHeight)
     })
     aboutBtn.addEventListener('click', () => {
         about.scrollIntoView(false)
+    })
+
+    contactsBtn.addEventListener('click', () => {
+        window.scrollBy(0, document.body.offsetHeight)
     })
      
 }

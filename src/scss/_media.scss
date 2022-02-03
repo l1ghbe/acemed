@@ -1,23 +1,46 @@
 @import './vars.scss';
 
+@media (max-width: $laptop992) {
+    .equipment-img {
+        img {
+            width: 400px;
+        }
+    }
+    .equipment-btns {
+        flex-direction: column;
+        svg {
+            height: 55px;
+        }
+    }
+    .equipment {
+        margin-bottom: 400px;
+    }
+}
+
 @media (max-width: 820px) {
-    .about {
+    .equipment {
         margin-bottom: 528px;
+        &-section {
+            flex-direction: column;
+        }
     }
 }
 
 @media (max-width: $tablet580) {
+    
     .main__description {
         font-size: 1.1rem;
     }
 
-    .blob-btn {
-        font-size: 12px;
-        padding: 17px 30px;
-    }
-    .buttons {
-        svg {
-            left: -50%;
+    .main {
+        .blob-btn {
+            font-size: 12px;
+            padding: 17px 30px;
+        }
+        .buttons {
+            svg {
+                left: -50%;
+            }
         }
     }
 
@@ -30,5 +53,31 @@
     }
     .dots-svg-1 {
         top: -50%;
+    }
+    .equipment-img {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .equipment-btns {
+        .buttons {
+            width: 100%;
+        }
+    }
+    .main__description {
+        font-size: 0.9rem;
+    }
+    .equipment {
+        margin-bottom: 450px;
+    }
+}
+@media (max-width: 315px) {
+    .equipment-btns {
+        .buttons {
+            width: auto;
+        }
     }
 }

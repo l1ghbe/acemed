@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ООО 'ЭйсМед' - это ...">
+    <title>ООО "Эйсмед"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <a href="#" class="logo-link">
+                            <img src="img/logo.svg" class="logo" alt="Logo">
+                            <div class="logo-text">ЭйсМед</div>
+                        </a>
+                    </div>
+                    <nav class="header-menu">
+                        <ul class="header-menu-list">
+                            <li class="header-menu__item"><btn class="header-menu__link link">Главная</btn></li>
+                            <li class="header-menu__item"><btn id="about-btn" class="header-menu__link link">О нас</btn></li>
+                            <li class="header-menu__item"><btn id="contacts-btn" class="header-menu__link link">Контакты</btn></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="main__row">
+                    <p class="main__description">ООО "Эйсмед" - это компания, которая занимается оптовой торговлей фармацевтическими, ветеринарными, медицинскими и ортопедическими товарами, которые отгружаются по всему земному шару.
+                    </p>
+                    <!-- <p class="main__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sint rem distinctio, amet ut quisquam dicta aspernatur recusandae alias consequatur iste enim corporis et odit ea ullam impedit id a.
+                    </p> -->
+                    <!-- <button>Контакт ас</button> -->
+                    <div class="buttons">
+                        <button class="blob-btn" id="main-btn">
+                          Свяжитесь с нами
+                          <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                              <span class="blob-btn__blob"></span>
+                              <span class="blob-btn__blob"></span>
+                              <span class="blob-btn__blob"></span>
+                              <span class="blob-btn__blob"></span>
+                            </span>
+                          </span>
+                        </button>
+                        <br/>
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                          <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                          </filter>
+                        </defs>
+                      </svg>
+                </div>
+            </div>
+            <div class="waveWrapper waveAnimation">
+                <div class="waveWrapperInner bgTop">
+                  <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgMiddle">
+                  <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                </div>
+                <div class="waveWrapperInner bgBottom">
+                  <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                </div>
+            </div>
+        </main>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about-title">О нас</h2>
+                <div class="about-description__wrapper">
+                  <p class="about-description">Профиль деятельности компании — поиск и внедрение новых лабораторных и диагностических технологий, нового оборудования и тест-систем. Мы накопили многолетний успешный опыт по комплексному оснащению лабораторий современным оборудованием в медицинских и научных учреждениях разного уровня.
+                    Мы работаем во всех регионах нашей страны. В своей работе мы опираемся на наших многочисленных региональных партнеров, на дистрибьютерские компании, которые представляют наши интересы и осуществляют вместе с нами планы по реорганизации и оснащению учреждений и лабораторий.
+                  </p>
+                  <!-- <p class="about-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non corporis similique assumenda ratione dicta eum fuga nam, optio aliquid. Doloribus harum voluptates commodi. Ducimus aperiam, architecto nobis consequatur asperiores dolore voluptates temporibus veniam vero culpa. Officiis recusandae sapiente alias illum. Ipsam a dolore at ipsum sit, consequatur.</p> -->
+                  <svg class="icon dots-svg-1">
+                    <use xlink:href="./img/dots.svg#dots"></use>
+                  </svg>
+                  <svg class="icon dots-svg-2">
+                    <use xlink:href="./img/dots.svg#dots"></use>
+                  </svg>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contacts">
+          <div class="top_header">
+            <section>
+              <span><i class="fa fa-map-marker"></i></span>
+              <span> 220124 Беларусь, г. Минск, ул. Масюковщина, 44</span>
+            </section>
+            <section>
+              <span><i class="fa fa-phone"></i></span>
+              <a href="tel:80296333233" class="link">+375(29)633-32-33</a>
+            </section>
+            <section>
+              <span><i class="fa fa-envelope"></i></span>
+              <a href="mailto:acemed@gmail.com" class="link">acemed@gmail.com</a>
+            </section>
+          </div>
+          <span class="border-shape"></span>
+          <div class="bottom_content">
+            <section>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+            </section>
+            <section>
+              <!-- <a href="#">Home</a>
+              <a href="#">About us</a>
+              <a href="#">Order</a>
+              <a href="#">Retail</a>
+              <a href="#">Member</a>
+              <a href="#">Contact Us</a> -->
+              <a href="#">ООО "ЭйсМед"</a>
+            </section>
+          </div>
+          <div class="copyright">
+            Copyright © 2022 - Все права защищены
+          </div>
+        </footer>
+
+    </div>
+    
+    <script src="js/script.min.js"></script>
+</body>
+</html>
