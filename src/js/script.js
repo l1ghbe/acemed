@@ -13,19 +13,21 @@ gsap.from('#main-btn', {
     delay: 0.8,
     ease: "bounce.out",
 })
-gsap.from('.logo', {
+gsap.from('.logo-link', {
     x: -100,
     opacity: 0,
     duration: 1,
     delay: 1,
     ease: "back.out(1.7)",
 })
-gsap.from('.header-menu__item', {
-    y: -50,
-    opacity: 0,
-    stagger: 0.2,
-    delay: 1
-})
+if (window.innerWidth > 990) {
+    gsap.from('.header-menu__item', {
+        y: -50,
+        opacity: 0,
+        stagger: 0.2,
+        delay: 1
+    })
+}
 
 gsap.from('.about-title', {
     scrollTrigger: {
